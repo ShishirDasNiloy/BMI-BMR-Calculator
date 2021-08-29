@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="759.0" prefWidth="423.0" style="-fx-background-color: #00bcd4;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bmi.bmr.FXMLDocumentController">
+   <children>
+      <TextField fx:id="height" layoutX="46.0" layoutY="277.0" prefHeight="39.0" prefWidth="331.0" promptText="Enter Height in (m)">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="weight" layoutX="46.0" layoutY="331.0" prefHeight="39.0" prefWidth="331.0" promptText="Enter Weight in (Kg)">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="bmiresult" layoutX="46.0" layoutY="553.0" prefHeight="39.0" prefWidth="331.0" promptText="Your BMI (Body Mass Idex)">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="bmistatus" layoutX="46.0" layoutY="603.0" prefHeight="39.0" prefWidth="331.0" promptText="Nutritional Status">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="bmrresult" layoutX="46.0" layoutY="653.0" prefHeight="39.0" prefWidth="331.0" promptText="Your BMR (Basal Metabolic Rate)">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button layoutX="82.0" layoutY="438.0" mnemonicParsing="false" onAction="#calculatemale" prefHeight="44.0" prefWidth="260.0" style="-fx-background-color: #00587a;" text="Calculate Male" textFill="#4bc8f2">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="148.0" layoutY="700.0" mnemonicParsing="false" onAction="#clear" prefHeight="39.0" prefWidth="127.0" style="-fx-background-color: #b2ebf2;" text="Clear" textFill="#0094a4">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="350.0" layoutY="35.0" mnemonicParsing="false" onAction="#exit" opacity="0.72" style="-fx-background-color: #dd2c00;" text="✕" textFill="#f2f2f2">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="83.0" layoutY="494.0" mnemonicParsing="false" onAction="#calculatefemale" prefHeight="44.0" prefWidth="260.0" style="-fx-background-color: #ffabe1;" text="Calculate Female" textFill="#c60081">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <TextField fx:id="age" layoutX="46.0" layoutY="384.0" prefHeight="39.0" prefWidth="331.0" promptText="Enter Your Age">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" layoutX="131.0" layoutY="32.0" prefHeight="17.0" prefWidth="140.0" text="BMI &amp; BMR" textFill="#00587a">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="67.0" layoutY="68.0" prefHeight="36.0" prefWidth="269.0" text="Calculator By Shishir" textFill="#00587a">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="feet" layoutX="46.0" layoutY="123.0" prefHeight="39.0" prefWidth="149.0" promptText="Feet">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="inch" layoutX="226.0" layoutY="123.0" prefHeight="39.0" prefWidth="149.0" promptText="Inch">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button layoutX="134.0" layoutY="219.0" mnemonicParsing="false" onAction="#convertmetre" prefHeight="44.0" prefWidth="157.0" style="-fx-background-color: #81daf8;" text=" Convert To Metre" textFill="#00587a">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="198.0" layoutY="118.0" prefHeight="30.0" prefWidth="28.0" text="+" textFill="#00587a">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="46.0" layoutY="168.0" prefHeight="30.0" prefWidth="331.0" text="If you dont know your height in metre" textFill="#00587a">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="36.0" layoutY="189.0" prefHeight="30.0" prefWidth="331.0" text="Convert Here" textFill="#00587a">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
